@@ -133,7 +133,7 @@
 			}
 
 			// 8: Add listeners
-			switchCont.addEventListener('touchstart', this.toggle.bind(this));
+			switchCont.addEventListener('touchstart', this.toggle.bind(this), {passive: true});
 			switchCont.addEventListener('click', this.toggle.bind(this));
 
 			// 9: Set switch to bootstrap object
